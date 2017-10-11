@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>Ask Anything</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+<header class="large">
+  <div class="container">
+    <nav class="top" id="toggleNav">
+      <ul>
+        <li><a class="topmenu" href="#">Home</a></li>
+        <li><a class="topmenu" href="#">Log In</a></li>
+        <li><a class="topmenu" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+  </div>
+</header>
+
+
+<section class="imgback">
+	<p>Ask <span>Anything</span></p>
+</section>
+
+<section class="stretch">
+	<div class="questions">
+  		<div class="ask">
+  			<form>
+			  <input type="text" class="title" placeholder="Title"><br>
+			  <textarea rows="5" class="content" placeholder="Details"></textarea><br>
+			  <button type="button" onclick="alert('Hello World!')">Ask!</button>
+			</form>
+  		</div>
+  		<h1 class="titleQuest">Questions</h1>
+  		<div class="box">
+  		    <h2>Are we inside a computer simulation?</h2>
+  		</div>
+	</div>
+	<div class="categories">
+		<h1>Categoriess</h1>
+	</div>
+</section>	
+
+
+<!-- Scripts -->
+<script src="css/jquery-3.2.1.min.js"></script>
+<script>
+// Change style of navbar on scroll
+$(document).on("scroll", function() {
+	if(($(document).scrollTop()>300) && (window.matchMedia('(min-width: 601px)').matches)) {
+		$("header").removeClass("large").addClass("small");
+	} else {
+		$("header").removeClass("small").addClass("large");
+	}
+});
+
+
+function myFunction() {
+    var x = document.getElementById("toggleNav");
+    if (x.className === "top") {
+        x.className = "responsive";
+    } else {
+        x.className = "top";
+    }
+}
+
+</script>
+
+
+</body>
+</html>
+
