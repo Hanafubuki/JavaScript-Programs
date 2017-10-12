@@ -1,0 +1,38 @@
+body{
+	font-family: 'Roboto', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+	color:#333;
+	font-weight:400;
+	font-size:15px;
+	width:900px;
+	
+	margin:auto;
+}
+h1,h3 {
+	font-family: 'Roboto', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+	position: relative;
+	margin: 10px 0;
+	font-weight:500;
+	color: #CD5C5C;
+	text-transform: uppercase;
+}
+h2{
+	font-family: 'Roboto', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+                color:#333;
+                font-weight:200;
+}
+
+.formulario{
+	width: 50%;
+	height:40px;
+	float:left;
+}
+
+.botao{
+	height:40px;
+
+	font-size:14px;
+	color:#3A3A3A;
+	border:2px;
+	border-color:#3A3A3A;
+	margin-left:10px;
+}

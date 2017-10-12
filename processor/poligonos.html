@@ -1,0 +1,49 @@
+<html>
+	<head> <title>Processador de retas e polígonos</title>
+	<meta charset="utf-8"> 
+	<script type="text/javascript" src="script.js"> </script>
+	<style>
+		body{
+			font-family: 'Roboto', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+			color:#333;
+			font-weight:400;
+			font-size:15px;
+			width:900px;
+			
+			margin:auto;
+		}
+		h1,h3 {
+			font-family: 'Roboto', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+			position: relative;
+			margin: 10px 0;
+			font-weight:500;
+			color: #CD5C5C;
+			text-transform: uppercase;
+		}
+		
+	</style>
+	</head>
+	<body onload="init()"><br>
+		<center><h1>T3 - Processador de retas e polígonos</h1></center><br><br>
+		
+		Selecione o polígono desejado: 
+		<select id="selectList" name="selectList" onchange="atualiza()">
+			<option value="0">2</option>
+			<option value="1">3</option>
+			<option value="2">4</option>
+			<option value="3">5</option>
+			<option value="4">6</option>
+			<option value="5">7</option>
+			<option value="6">8</option>
+		</select><br><br>
+		<h3>Instruções:</h3>
+		- Com o botão esquerdo do mouse, arraste e mova os pontos de inicio e fim da reta, ou a reta inteira utilizando o ponto do meio. <br>
+		- Com o botão direito do mouse, clique próximo a um dos pontos da reta para quebrar a reta.<br><br><br>
+			
+		<canvas id="myCanvas" onmousedown="qualEvento(event)" onmouseup="atualizaLinhas(event)" width="900" height="500" style="border:2px solid #333;"></canvas><br><br>
+		
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+
+
+		<title>Grade</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="bootstrap.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<!-- jQuery -->
+		<script src="jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body onload="pegaDados()">
+		<center><h1><b>Visualizeitor</b></h1></center><br><br>
+		<div class="container">
+		<!-- INICIO CAMPO DE PESQUISA -->
+		<h2><b>Insira um GRR</b></h2>
+		<form role="form" id="searchform2" name="searchform2" method="get" action="index.html" >
+		  <div class="form-group"> 
+			  <input type="text" name="s2" id="s2" class="form-control formulario" placeholder="Insira um GRR..." tabindex="2">
+			  <button type="submit" name="search2btn" id="search2btn" class="btn botao" onclick="atualizaDadosPagina()"><b>PROCURAR</b></button>
+		  </div>
+		</form><br>
+		<div class="main">
+		<h2><b>ALUNO</b></h2>
+		<h3><b>Informacoes gerais</b></h3>
+		<b>GRR:</b><p class="GRR"></p>
+		<b>Nome:</b><p class="nome"></p><br><br>
+		
+		<h3><b>Grade Curricular</b></h3>
+		<div id="grade">
+		
+		</div>
+		</div>
+		<br>
+		<h4 id="tituloLegenda"><span> Legenda </span></h4>
+		<table width="80%" id="tabelaLegenda">
+			<tr>
+				<td style="background-color:#9FF694;" width="17px" height="15px"></td><td style="padding-left:7px;"> Aprovado</td>
+				<td style="background-color:#F69494;" width="17px" height="15px"></td><td style="padding-left:7px;">Reprovado</td>
+				<td style="background-color:#4682B4;"  width="17px" height="15px"></td><td style="padding-left:7px;">Matriculado</td>
+				<td style="background-color:#F6F494;" width="17px" height="15px"></td><td style="padding-left:7px;">Equivalencia</td>
+				<td style="background-color:#ffff; border:2px #000; border-color: " width="17px" height="15px"></td><td style="padding-left:7px;">Não cursado</td>
+			</tr>
+			
+		</table>
+		
+		</div>
+		
+		 <script src="bootstrap.min.js"></script>
+	</body>
+</html>
