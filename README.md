@@ -1,4 +1,4 @@
-Each program were created in different times and with different purpose.
+Each program was created with different purposes, but all of them were to learn different languages only.
 
 Processor and visualizeitor were created to learn more about javascript and jquery.
 BlogReactRails was created to learn about React, Ruby on Rails and how to integrate both languages, without any focus on layout.
