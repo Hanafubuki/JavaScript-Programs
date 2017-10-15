@@ -2,6 +2,7 @@ $font-content: 'Montserrat', sans-serif;
 $font-title: 'Poiret One', cursive;
 $blue: #0fc8ff;
 $darkblue: #006280;
+$darkyellow: #feb201;
 $yellow: #feb916;
 $grey: #262626;
 
@@ -34,7 +35,6 @@ a{
 	font-family: $font-title;
 	font-weight: bold;
 }
-
 .container {
   width: 90%;
   min-width: 740px;
@@ -216,6 +216,20 @@ section.stretch {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@mixin main-buttons($mt,$w,$fs,$h,$bc){
+	margin-top: $mt;
+	width:$w;
+	font-size: $fs;
+	height:$h;
+	background-color: $bc;
+	border: none;
+	float: right;
+	font-family: $font-title;
+	font-weight: bold;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 .ask{
 	@include main-content(300px);
 
@@ -234,16 +248,7 @@ section.stretch {
 			font-family: $font-content;
 		}
 		button{
-			font-size: 30px;
-			margin-top: 10px;
-			height:45px;
-			width:100px;
-			background-color: $yellow;
-			border: none;
-			float: right;
-			font-family: $font-title;
-			font-weight: bold;
-			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+			@include main-buttons(10px,100px,30px,45px,$yellow);
 		}
 	}
 }
@@ -263,6 +268,20 @@ section.stretch {
 		line-height: 20px;
 		padding-top: 20px;
 	}
+	button{
+		@include main-buttons(20px,130px,20px,35px,$blue);
+	}
+}
+
+.box-details{
+	padding-left: 20px;
+	float: left;
+	color:$darkyellow;
+
+	span{
+		display:inline-block; 
+		width: 20px;
+	}
 }
 
 .categories {
@@ -270,7 +289,7 @@ section.stretch {
     width: 25%;
     margin: 12px;
     margin-top: 50px;
-    @include main-content(800px);
+    @include main-content(auto);
     h1{
     	font-size: 30px;
     	line-height: 50px;
