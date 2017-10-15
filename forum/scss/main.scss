@@ -1,7 +1,9 @@
-$font-content: Segoe UI, sans-serif;
+$font-content: 'Montserrat', sans-serif;
 $font-title: 'Poiret One', cursive;
 $blue: #0fc8ff;
+$darkblue: #006280;
 $yellow: #feb916;
+$grey: #262626;
 
 *, 
 *:before, 
@@ -23,6 +25,12 @@ body, html {
 }
 
 h1,h2{
+	font-family: $font-title;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
 	font-family: $font-title;
 	font-weight: bold;
 }
@@ -98,6 +106,7 @@ img.logo {
 }
 
 
+
 /*---------- Header ----------*/
 header {
 	float: left;
@@ -107,9 +116,7 @@ header {
 
 	a {
 		color: #999;
-		text-decoration: none;
-		font-family: $font-title;
-		font-weight: bold;
+		
 		text-transform: uppercase;
 		font-size: 1.2em;
 	}
@@ -216,7 +223,7 @@ section.stretch {
 		.title{
 			height:50px;
 			width:100%;
-			font-size: 25px;
+			font-size: 20px;
 			font-family: $font-content;
 		}
 		.content{
@@ -249,7 +256,13 @@ section.stretch {
 
 .box{
 	margin-top: 10px;
-	@include main-content(150px);
+	@include main-content(250px);
+	color:$grey;
+	p{
+		font-size: 15px;
+		line-height: 20px;
+		padding-top: 20px;
+	}
 }
 
 .categories {
@@ -258,6 +271,22 @@ section.stretch {
     margin: 12px;
     margin-top: 50px;
     @include main-content(800px);
+    h1{
+    	font-size: 30px;
+    	line-height: 50px;
+    }
+    a{
+    	font-size: 20px;
+    	line-height: 35px;
+    	color: $darkblue;
+    	padding-left: 10px;
+
+
+    }
+    a:hover{
+    	color: $blue;
+    }
+
 }
 
 /*---------- Transitions ----------*/

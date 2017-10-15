@@ -10,13 +10,18 @@
 
 body {
   background-color: #f3f3f3;
-  font-family: Segoe UI, sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 body, html {
   height: 100%;
   /* Put background-img full screen */ }
 
 h1, h2 {
+  font-family: "Poiret One", cursive;
+  font-weight: bold; }
+
+a {
+  text-decoration: none;
   font-family: "Poiret One", cursive;
   font-weight: bold; }
 
@@ -89,9 +94,6 @@ header {
   z-index: 10; }
   header a {
     color: #999;
-    text-decoration: none;
-    font-family: "Poiret One", cursive;
-    font-weight: bold;
     text-transform: uppercase;
     font-size: 1.2em; }
   header a.active, header a:hover {
@@ -165,14 +167,14 @@ section.stretch {
   .ask form .title {
     height: 50px;
     width: 100%;
-    font-size: 25px;
-    font-family: Segoe UI, sans-serif; }
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif; }
   .ask form .content {
     font-size: 20px;
     margin-top: 10px;
     height: 150px;
     width: 100%;
-    font-family: Segoe UI, sans-serif; }
+    font-family: "Montserrat", sans-serif; }
   .ask form button {
     font-size: 30px;
     margin-top: 10px;
@@ -192,10 +194,15 @@ section.stretch {
 .box {
   margin-top: 10px;
   padding: 20px;
-  height: 150px;
+  height: 250px;
   background-color: #fff;
   border: 1px solid lightgrey;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #262626; }
+  .box p {
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 20px; }
 
 .categories {
   display: inline-block;
@@ -207,6 +214,16 @@ section.stretch {
   background-color: #fff;
   border: 1px solid lightgrey;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .categories h1 {
+    font-size: 30px;
+    line-height: 50px; }
+  .categories a {
+    font-size: 20px;
+    line-height: 35px;
+    color: #006280;
+    padding-left: 10px; }
+  .categories a:hover {
+    color: #0fc8ff; }
 
 /*---------- Transitions ----------*/
 header,
