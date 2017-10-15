@@ -1,13 +1,13 @@
 {
   "name": "forum",
   "version": "1.0.0",
-  "description": "ask anything",
+  "description": "forum with html5,css3,js,jquery and react",
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Hana Fubuki",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.5.3",
