@@ -19,7 +19,16 @@ h1, h2 {
     margin-top: 10px;
     height: 150px;
     width: 100%;
+    font-family: "Montserrat", sans-serif;
+    resize: none; }
+  .ask form select {
+    font-size: 20px;
+    width: 100%;
     font-family: "Montserrat", sans-serif; }
+    .ask form select option {
+      font-size: 20px;
+      width: 100%;
+      font-family: "Montserrat", sans-serif; }
   .ask form button {
     margin-top: 10px;
     width: 100px;
