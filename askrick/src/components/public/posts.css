@@ -1,0 +1,84 @@
+h1, h2 {
+  font-family: "Poiret One", cursive;
+  font-weight: bold; }
+
+.ask {
+  padding: 20px;
+  height: auto;
+  overflow: auto;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .ask form .title {
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif; }
+  .ask form .content {
+    font-size: 20px;
+    margin-top: 10px;
+    height: 150px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif; }
+  .ask form button {
+    margin-top: 10px;
+    width: 100px;
+    font-size: 30px;
+    height: 45px;
+    background-color: #feb916;
+    border: none;
+    float: right;
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19); }
+
+.titleQuest {
+  margin-top: 60px;
+  font-size: 40px; }
+
+.box {
+  margin-top: 10px;
+  padding: 20px;
+  height: auto;
+  overflow: auto;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #262626; }
+  .box button {
+    margin-top: 20px;
+    width: 130px;
+    font-size: 20px;
+    height: 35px;
+    background-color: #0fc8ff;
+    border: none;
+    float: right;
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19); }
+  .box .box-content {
+    font-size: 15px;
+    height: 80px;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    overflow: hidden; }
+  .box .box-details {
+    line-height: 20px;
+    padding-top: 20px;
+    padding-left: 0px;
+    float: left;
+    color: #009ccc; }
+    .box .box-details span {
+      display: inline-block;
+      width: 20px; }
+
+@media screen and (max-width: 750px) {
+  .box {
+    padding: 10px;
+    height: auto;
+    overflow: auto;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .box .box-details {
+      padding-left: 10px; } }

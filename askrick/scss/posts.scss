@@ -1,0 +1,102 @@
+$font-content: 'Montserrat', sans-serif;
+$font-title: 'Poiret One', cursive;
+$blue: #0fc8ff;
+$darkblue: #006280;
+$darkyellow: #feb201;
+$middleblue: #009ccc;
+$yellow: #feb916;
+$grey: #262626;
+
+h1,h2{
+	font-family: $font-title;
+	font-weight: bold;
+}
+
+
+@mixin main-content($p){
+	padding: $p;
+	height: auto;
+	overflow: auto; //for the auto works
+    background-color: #fff;
+    border: 1px solid lightgrey;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin main-buttons($mt,$w,$fs,$h,$bc){
+	margin-top: $mt;
+	width:$w;
+	font-size: $fs;
+	height:$h;
+	background-color: $bc;
+	border: none;
+	float: right;
+	font-family: $font-title;
+	font-weight: bold;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.ask{
+	@include main-content(20px);
+	form{
+		.title{
+			height:50px;
+			width:100%;
+			font-size: 20px;
+			font-family: $font-content;
+		}
+		.content{
+			font-size: 20px;
+			margin-top: 10px;
+			height:150px;
+			width:100%;
+			font-family: $font-content;
+		}
+		button{
+			@include main-buttons(10px,100px,30px,45px,$yellow);
+		}
+	}
+}
+
+
+.titleQuest{
+	margin-top: 60px;
+	font-size: 40px;
+}
+
+.box{
+	margin-top: 10px;
+	@include main-content(20px);
+	color:$grey;
+	button{
+		@include main-buttons(20px,130px,20px,35px,$blue);
+	}
+	.box-content{
+		font-size: 15px;
+		height:80px;
+		text-overflow: ellipsis; 
+		white-space: pre-wrap; // only if wants to show one line
+		overflow: hidden;
+	}
+	.box-details{
+		line-height: 20px;
+		padding-top: 20px;
+		padding-left: 0px;
+		float: left;
+		color:$middleblue;
+
+		span{
+			display:inline-block; 
+			width: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 750px){
+	.box{
+		@include main-content(10px);
+		.box-details{
+			padding-left: 10px;
+		}		
+	}
+}

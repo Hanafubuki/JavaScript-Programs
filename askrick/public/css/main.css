@@ -1,0 +1,225 @@
+*,
+*:before,
+*:after {
+  /* Normalize screen */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Montserrat", sans-serif; }
+
+body, html {
+  height: 100%;
+  /* Put background-img full screen */ }
+
+h1, h2 {
+  font-family: "Poiret One", cursive;
+  font-weight: bold; }
+
+a {
+  text-decoration: none;
+  font-family: "Poiret One", cursive;
+  font-weight: bold; }
+
+.container {
+  width: 90%;
+  min-width: 740px;
+  margin: 0 auto; }
+
+/*---------- Navbar ----------*/
+nav.top {
+  width: 100%;
+  margin: 0 auto; }
+  nav.top ul {
+    float: right; }
+    nav.top ul li {
+      display: inline;
+      float: left; }
+
+img.logo {
+  float: left; }
+
+.icon {
+  overflow: hidden;
+  display: none; }
+
+@media screen and (max-width: 750px) {
+  .top {
+    display: none; }
+  .icon {
+    float: right;
+    right: 0;
+    top: 0;
+    position: absolute;
+    font-size: 36px;
+    display: inline-block;
+    padding: 8px 16px; }
+  .responsive {
+    height: 1000px;
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
+    z-index: 0;
+    overflow: auto;
+    background-color: #000;
+    font-size: 36px;
+    animation: animatetop 0.4s; }
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0; }
+    to {
+      top: 0;
+      opacity: 1; } }
+  .topmenu {
+    width: 100%;
+    display: block;
+    position: fixed;
+    padding: 8px 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+    white-space: normal;
+    float: none; } }
+
+/*---------- Header ----------*/
+header {
+  float: left;
+  width: 100%;
+  position: fixed;
+  z-index: 10; }
+  header a {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 1.2em; }
+  header a.active, header a:hover {
+    color: #3d3d3d; }
+  header li {
+    margin-right: 30px; }
+
+/* header large */
+header.large {
+  height: 120px; }
+  header.large img {
+    margin-top: 30px; }
+  header.large li {
+    margin-top: 52px; }
+
+/* header small */
+header.small {
+  height: 70px;
+  background-color: #2f3239;
+  border-bottom: 1px solid #111;
+  box-shadow: 2px 2px 1px #666; }
+  header.small li {
+    margin-top: 27px; }
+
+@media screen and (max-width: 600px) {
+  header.small {
+    height: 50px;
+    background-color: transparent;
+    border-bottom: 0px; }
+    header.small li {
+      margin-top: 17px; } }
+
+/*---------- Section ----------*/
+section.imgback {
+  background-image: url("../img/ask.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  section.imgback p {
+    color: #0fc8ff;
+    font-weight: bold;
+    font-size: 80px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    section.imgback p span {
+      color: #feb916; }
+
+section.stretch {
+  height: auto;
+  width: 100%;
+  margin: auto; }
+
+.questions {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  margin-left: 3%;
+  margin-top: 50px; }
+
+.categories {
+  display: inline-block;
+  width: 250px;
+  margin-left: 12px;
+  margin-right: 3%;
+  margin-top: 50px;
+  padding: 20px;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .categories h1 {
+    font-size: 30px;
+    line-height: 50px; }
+  .categories a {
+    font-size: 20px;
+    line-height: 35px;
+    color: #006280;
+    padding-left: 10px; }
+  .categories a:hover {
+    color: #0fc8ff; }
+
+@media screen and (max-width: 1120px) {
+  .questions {
+    vertical-align: top;
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 50px; }
+  .categories {
+    width: 94%;
+    margin-left: 3%; } }
+
+@media screen and (max-width: 750px) {
+  .questions {
+    vertical-align: top;
+    width: 100%;
+    margin: 0px; }
+  .categories {
+    width: 100%;
+    margin: 0px;
+    margin-top: 30px; } }
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  height: auto;
+  background-color: #2f3239;
+  border: 0px solid lightgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+  text-align: center;
+  font-family: "Poiret One", cursive; }
+  footer b {
+    color: #feb916; }
+
+/*---------- Transitions ----------*/
+header,
+nav,
+a,
+img,
+li {
+  transition: .7s all;
+  -moz-transition: .7s all;
+  -webkit-transition: .7s all;
+  -o-transition: .7s all; }
