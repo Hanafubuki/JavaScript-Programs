@@ -6,6 +6,7 @@ $darkyellow: #feb201;
 $middleblue: #009ccc;
 $yellow: #feb916;
 $grey: #262626;
+$red: #ed5666;
 
 h1,h2{
 	font-family: $font-title;
@@ -13,6 +14,70 @@ h1,h2{
 }
 
 
+/******** Alert modal *********/
+.alert{
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 250px;
+    left: 0;
+    top: 0px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    //background-color: rgb(0,0,0); /* Fallback color */
+   // background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+    .alert-content{
+    	position: relative;
+	    background-color: $red;
+	    color: #fff;
+	    margin: auto;
+	    padding: 0;
+	    //border: 1px solid #888;
+	    width: 350px;
+	    height: auto;
+	    box-shadow:0px 10px 30px 10px rgba(0,0,0,0.1);
+	    //border-radius: 10px;
+	    -webkit-animation-name: animatetop;
+	    -webkit-animation-duration: 0.4s;
+	    animation-name: animatetop;
+	    animation-duration: 0.4s;
+	    .message{
+	    	padding:20px;
+	    	text-align: center;
+	    	font-size: 20px;
+	    }
+	    .close {
+		    color: white;
+		    float: right;
+		    font-size: 20px;
+		    font-weight: bold;
+		    padding: 10px;
+		}
+
+		.close:hover,
+		.close:focus {
+		    color: #000;
+		    text-decoration: none;
+		    cursor: pointer;
+		}
+	}
+}
+
+	
+
+@-webkit-keyframes animatetop {
+    from {top:-500px; opacity:0} 
+    to {top: 0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-500px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+/******** Main *********/
 @mixin main-content($p){
 	padding: $p;
 	height: auto;
@@ -35,9 +100,9 @@ h1,h2{
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .ask{
 	@include main-content(20px);
+	z-index: 0;
 	form{
 		.title{
 			height:50px;
