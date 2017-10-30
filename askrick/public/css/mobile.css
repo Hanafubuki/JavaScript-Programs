@@ -33,7 +33,8 @@ a {
 /*---------- Navbar ----------*/
 nav.top {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: none; }
   nav.top ul {
     float: right; }
     nav.top ul li {
@@ -45,7 +46,43 @@ img.logo {
 
 .icon {
   overflow: hidden;
-  display: none; }
+  float: right;
+  right: 0;
+  top: 0;
+  position: absolute;
+  font-size: 36px;
+  display: inline-block;
+  padding: 8px 16px; }
+
+.responsive {
+  height: 1000px;
+  width: 100%;
+  padding-top: 50px;
+  position: relative;
+  z-index: 0;
+  overflow: auto;
+  background-color: #000;
+  font-size: 36px;
+  animation: animatetop 0.4s; }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+.topmenu {
+  width: 100%;
+  display: block;
+  position: fixed;
+  padding: 8px 16px;
+  text-align: center;
+  border: none;
+  outline: none;
+  white-space: normal;
+  float: none; }
 
 /*---------- Header ----------*/
 header {
@@ -79,9 +116,17 @@ header.small {
   header.small li {
     margin-top: 27px; }
 
+@media screen and (max-width: 600px) {
+  header.small {
+    height: 50px;
+    background-color: transparent;
+    border-bottom: 0px; }
+    header.small li {
+      margin-top: 17px; } }
+
 /*---------- Section ----------*/
 section.imgback {
-  background-image: url("../img/ask.jpg");
+  background-image: url("../img/ask3.jpg");
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -89,7 +134,7 @@ section.imgback {
   section.imgback p {
     color: #0fc8ff;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 70px;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -106,17 +151,19 @@ section.stretch {
 
 .questions {
   display: inline-block;
-  vertical-align: top;
-  width: 70%;
   margin-left: 3%;
-  margin-top: 50px; }
+  margin-top: 50px;
+  vertical-align: top;
+  width: 100%;
+  margin: 0px; }
 
 .categories {
   display: inline-block;
-  width: 250px;
   margin-left: 12px;
   margin-right: 3%;
-  margin-top: 50px;
+  width: 100%;
+  margin: 0px;
+  margin-top: 30px;
   padding: 20px;
   height: auto;
   background-color: #fff;
@@ -132,16 +179,6 @@ section.stretch {
     padding-left: 10px; }
   .categories a:hover {
     color: #0fc8ff; }
-
-@media screen and (max-width: 1120px) {
-  .questions {
-    vertical-align: top;
-    width: 94%;
-    margin-left: 3%;
-    margin-top: 50px; }
-  .categories {
-    width: 94%;
-    margin-left: 3%; } }
 
 footer {
   margin-top: 50px;
