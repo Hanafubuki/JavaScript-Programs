@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Poiret One';
+  src: url('fonts/Poiret_One/PoiretOne-Regular.ttf');/* Safari, Android, iOS */
+}
