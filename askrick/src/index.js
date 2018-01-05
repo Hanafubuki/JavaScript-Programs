@@ -12,9 +12,13 @@ ReactDOM.render(
 	<BrowserRouter>
 	<div>
 		<Route path="/" component={Layout} />
-		<Route exact path="/" component={App} />
-		<Route path="/login" component={Login} />
-		<Route path="/contact" component={Contact} />
+		<section className="stretch">
+		 <div className="questions">
+			<Route exact path="/" component={App} />
+			<Route path="/login" component={Login} />
+			<Route path="/contact" component={Contact} />
+		 </div>
+		</section>
 	</div>
 	</BrowserRouter>
 	, document.getElementById('root'));

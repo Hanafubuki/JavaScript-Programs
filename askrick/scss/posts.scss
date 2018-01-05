@@ -17,14 +17,15 @@ body, html {
 	height: 100%; /* Put background-img full screen */
 }
 
-
 .imgback{
 	background-image: url('../img/ask.jpg');
-    min-height: 100%;
+    min-height: 600px;
 	background-position: center;
-    background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
     position: relative;
-
     p {
 		color: $blue;
 		font-weight: bold;

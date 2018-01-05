@@ -1,3 +1,14 @@
+*,
+*:before,
+*:after {
+  /* Normalize screen */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+
 h1, h2 {
   font-family: "Poiret One", cursive;
   font-weight: bold; }
@@ -7,7 +18,7 @@ body, html {
   /* Put background-img full screen */ }
 
 .imgback {
-  background-image: url("../img/ask.jpg");
+  background-image: url("../img/ask.jpg") ;
   min-height: 600px;
   background-position: center;
   -webkit-background-size: cover;
@@ -18,7 +29,7 @@ body, html {
   .imgback p {
     color: #0fc8ff;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 90px;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -182,3 +193,5 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .box .box-details {
       padding-left: 10px; } }
+
+

@@ -52,9 +52,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <section className="imgback">
-          <p>Ask <span>Anything</span></p>
-        </section>
+      
         <AddPost addPost = {this.handleAddPost.bind(this)} />
         <Posts posts={this.state.posts} />
       </div>

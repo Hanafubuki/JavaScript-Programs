@@ -162,9 +162,12 @@ header.small {
 /*---------- Section ----------*/
 section.imgback{
 	background-image: url('../img/ask3.jpg');
-    min-height: 100%;
+    min-height: 600px;
 	background-position: center;
-    background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
     position: relative;
 
     p {
