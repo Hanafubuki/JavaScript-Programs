@@ -2,6 +2,36 @@ h1, h2 {
   font-family: "Poiret One", cursive;
   font-weight: bold; }
 
+body, html {
+  height: 100%;
+  /* Put background-img full screen */ }
+
+.imgback {
+  background-image: url("../img/ask.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .imgback p {
+    color: #0fc8ff;
+    font-weight: bold;
+    font-size: 80px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .imgback p span {
+      color: #feb916; }
+
+.questions {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  margin-left: 3%;
+  margin-top: 50px; }
+
 /******** Alert modal *********/
 .alert {
   position: fixed;

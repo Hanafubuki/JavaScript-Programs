@@ -80,25 +80,30 @@ header.small {
     margin-top: 27px; }
 
 /*---------- Section ----------*/
-section.imgback {
-  background-image: url("../img/ask.jpg");
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative; }
-  section.imgback p {
-    color: #0fc8ff;
-    font-weight: bold;
-    font-size: 80px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-    section.imgback p span {
-      color: #feb916; }
 
+section.imgback{
+	background-image: url('../img/ask.jpg');
+    min-height: 100%;
+	background-position: center;
+    background-size: cover;
+    position: relative;
+
+    p {
+		color: $blue;
+		font-weight: bold;
+		font-size: 80px;
+	    margin: 0;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+
+	    span{
+			color: $yellow;
+		}
+	}
+}
 section.stretch {
   height: auto;
   width: 100%;

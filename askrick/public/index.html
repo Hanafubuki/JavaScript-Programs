@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='manifest' href='manifest.json'>
-<meta name='theme-color' content='#f3f3f3'>
+<!--<meta name='theme-color' content='#f3f3f3'>-->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Poiret+One" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css" media="(min-width: 751px)">
 <link rel="stylesheet" href="css/mobile.css" media="(max-width: 750px)">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<body>
+<body><!--
 <header class="large">
   <div class="container">
     <nav class="top" id="toggleNav">
@@ -22,17 +22,13 @@
     </nav>
     <a href="javascript:void(0);" class="icon" onclick="menuFunction()"><i class="fa fa-bars"></i></a>
   </div>
-</header>
+</header>-->
 
+  <section class="stretch">
+	 <div class="questions" id="root">
 
-<section class="imgback">
-	<p>Ask <span>Anything</span></p>
-</section>
+	 </div>
 
-<section class="stretch">
-	<div class="questions" id="root">
-
-	</div>
 	<div class="categories">
 		<h1>Categories</h1>
       <a href="">El Psy Congroo</a><br>
@@ -50,14 +46,14 @@
 
 <!-- Scripts -->
 <script src="css/jquery-3.2.1.min.js"></script>
-<script src="../src/registerServiceWorker.js"></script>
+
 <script>
 //Service worker
-if('serviceWorker' in navigator) {
+/*if('serviceWorker' in navigator) {
   navigator.serviceWorker
            .register('/sw.js')
            .then(function() { console.log("Service Worker Registered"); });
-}
+}*/
 
 // Change style of navbar on scroll
 $(document).on("scroll", function() {

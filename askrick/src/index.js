@@ -1,7 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, BrowserRouter } from 'react-router-dom';
+
 import App from './App';
+import Layout from './Layout';
+import Login from './Login';
+import Contact from './Contact';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+	<BrowserRouter>
+	<div>
+		<Route path="/" component={Layout} />
+		<Route exact path="/" component={App} />
+		<Route path="/login" component={Login} />
+		<Route path="/contact" component={Contact} />
+	</div>
+	</BrowserRouter>
+	, document.getElementById('root'));
 registerServiceWorker();

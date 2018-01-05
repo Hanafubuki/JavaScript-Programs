@@ -6,7 +6,8 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      posts: []
+      posts: [],
+      users: []
     }
   }
 
@@ -24,6 +25,20 @@ class App extends Component {
         category: 'Rick and Morty',
         solved: 'Solved'
       }
+    ],
+    users: [
+      {
+        email: 'ann@gmail.com',
+        password: 'Ann123@',
+        name: 'Ann Smith',
+        birth: '07/23/1990'
+      },
+      {
+        email: 'john@gmail.com',
+        password: '%b1rd2',
+        name: 'John Travolta',
+        birth: '12/08/1983'
+      }
     ]});
   }
 
@@ -37,6 +52,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <section className="imgback">
+          <p>Ask <span>Anything</span></p>
+        </section>
         <AddPost addPost = {this.handleAddPost.bind(this)} />
         <Posts posts={this.state.posts} />
       </div>
