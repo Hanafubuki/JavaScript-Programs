@@ -177,7 +177,10 @@ body, html {
 	margin-top: 10px;
 	@include main-content(20px);
 	color:$grey;
-	button{
+	a{
+		line-height: 33px;
+    	text-align: center;
+    	color: #262626;
 		@include main-buttons(20px,130px,20px,35px,$blue);
 	}
 	.box-content{

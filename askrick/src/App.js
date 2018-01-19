@@ -52,7 +52,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      
         <AddPost addPost = {this.handleAddPost.bind(this)} />
         <Posts posts={this.state.posts} />
       </div>

@@ -145,15 +145,18 @@ body, html {
   border: 1px solid lightgrey;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #262626; }
-  .box button {
+  .box a {
     margin-top: 20px;
     width: 130px;
     font-size: 20px;
+    line-height: 33px;
+    text-align: center;
     height: 35px;
     background-color: #0fc8ff;
     border: none;
     float: right;
     font-family: "Poiret One", cursive;
+    color: #000;
     font-weight: bold;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19); }
   .box .box-content {
