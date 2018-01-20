@@ -70,6 +70,12 @@ header.large {
 }
 
 /*---------- Sections ----------*/
+@mixin sectioncontainer($w){
+	width:$w;
+	min-width: 740px;
+	margin: 0 auto;
+}
+
 section#thebeer{
 	padding-top: 230px;
 	float: left;
@@ -79,6 +85,9 @@ section#thebeer{
     	float: left;
     	margin-top: 150px;
     }
+    .beercontainer{
+    	@include sectioncontainer(90%);
+    }
 
     img{
     	float: left;
@@ -87,6 +96,22 @@ section#thebeer{
     }
 }
 
+section#celebrating{
+
+	.celebratingcontainer{
+		@include sectioncontainer(90%);
+	}
+	.beers{
+		margin-left: 5%;
+		img{
+	    	width: 100%;
+	    }
+		.boxbeer{
+    		width: 40%;
+    	}
+    }
+ }
+
 
 section#since1871{
 	padding-top: 80px;
@@ -94,5 +119,13 @@ section#since1871{
 	.video{
 		padding-top: 25px;
 		padding-bottom: 40%;
+		@include sectioncontainer(80%);
 	}
+}
+section#instagram{
+	@include sectioncontainer(85%); //deixa tudo zuado no mobile
+}
+
+footer{
+	@include sectioncontainer(85%);
 }

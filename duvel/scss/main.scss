@@ -77,16 +77,14 @@ nav.top {
 }
 
 section#thebeer{
-	background:url("../img/lines_left.png") no-repeat left top 180px , 
+	background:url("../img/lines_left.png") no-repeat left top 180px, 
                url("../img/lines_right.png") no-repeat right bottom;
     background-size: 80px, 70px;
     margin-bottom: 200px;
     overflow: auto; /* deixa o tam do height do pai igual ao tamanho dos filhos */
 	height: auto; /* deixa o tam do height do pai igual ao tamanho dos filhos */
-	/* width: 100%;  deixa o tam do height do pai igual ao tamanho dos filhos */
-    .beercontainer{
-    	@include sectioncontainer(90%);
-    }
+	width: 100%; /* deixa o tam do height do pai igual ao tamanho dos filhos */
+
 
     .content{
 	    h2{
@@ -94,6 +92,7 @@ section#thebeer{
 	    	font-weight: normal;
 	    	color: $grey;
 	    	text-align: justify;
+	    	overflow-wrap: break-word;
 	    }
 	}
 }
@@ -101,17 +100,15 @@ section#thebeer{
 section#celebrating{
 	clear: left;
 	padding-top: 100px;
-	@include sectioncontainer(90%);
 	margin-bottom: 100px;
 	height: auto;   /* deixa o tam do height do pai igual ao tamanho dos filhos */
 	overflow: auto; /* deixa o tam do height do pai igual ao tamanho dos filhos */
+	width: 100%; /* deixa o tam do height do pai igual ao tamanho dos filhos */
+	border-top: 3px solid $lightgrey;
 
-	.celebratingcontainer{
-    	float: left;
-    	margin-bottom: 100px;	
-    }
     .beers{
-    	clear: left;
+    	margin-top: 80px;	
+
     	img{
 	    	width: 100%;
 	    }
@@ -171,7 +168,7 @@ section#celebrating{
 
     			.more{
     				position: absolute;
-    				left: 90%;
+    				right: 10%;
     			}
     		}
 
@@ -186,7 +183,6 @@ section#since1871{
 	.video{
 		position: relative;
 		height: 0;
-		@include sectioncontainer(80%);
 		iframe {
 			position: absolute;
 			top: 0;
@@ -199,7 +195,6 @@ section#since1871{
 }
 
 section#instagram{
-	@include sectioncontainer(85%);
 	padding-top: 100px;
 	margin-bottom: 100px;
 	img{
@@ -209,7 +204,6 @@ section#instagram{
 }
 
 footer{
-	@include sectioncontainer(85%);
 	margin-top: 30px;
 	padding-bottom: 70px;
 	img{

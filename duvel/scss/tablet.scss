@@ -117,6 +117,12 @@ header.small {
 }
 
 /*---------- Sections ----------*/
+@mixin sectioncontainer($w){
+	width:$w;
+	min-width: 740px;
+	margin: 0 auto;
+}
+
 section#thebeer{
 	padding-top: 120px;
 	float: left;
@@ -127,6 +133,9 @@ section#thebeer{
     	margin-left: 30px;
     	padding-top: 80px;
 	}
+	.beercontainer{
+		@include sectioncontainer(90%);
+    }
 
 	h1{
 		font-size: 2.1em;
@@ -141,6 +150,15 @@ section#thebeer{
 	}
 }
 
+section#celebrating{
+	.celebratingcontainer{
+		@include sectioncontainer(90%);
+	}
+	.beer{
+		margin-left: 5%;
+	}	
+}
+
 
 section#since1871{
 	padding-top: 40px;
@@ -148,5 +166,14 @@ section#since1871{
 	.video{
 		position: relative;
 		padding-bottom: 47%; /* 16:9 */
+		@include sectioncontainer(80%);
 	}
+}
+
+section#instagram{
+	@include sectioncontainer(85%);
+}
+
+footer{
+	@include sectioncontainer(85%);
 }

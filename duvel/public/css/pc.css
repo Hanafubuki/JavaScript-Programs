@@ -53,13 +53,42 @@ section#thebeer {
     width: 45%;
     float: left;
     margin-top: 150px; }
+  section#thebeer .beercontainer {
+    width: 90%;
+    min-width: 740px;
+    margin: 0 auto; }
   section#thebeer img {
     float: left;
     width: 45%;
     margin-left: 60px; }
 
+section#celebrating .celebratingcontainer {
+  width: 90%;
+  min-width: 740px;
+  margin: 0 auto; }
+
+section#celebrating .beers {
+  margin-left: 5%; }
+  section#celebrating .beers img {
+    width: 100%; }
+  section#celebrating .beers .boxbeer {
+    width: 40%; }
+
 section#since1871 {
   padding-top: 80px; }
   section#since1871 .video {
     padding-top: 25px;
-    padding-bottom: 40%; }
+    padding-bottom: 40%;
+    width: 80%;
+    min-width: 740px;
+    margin: 0 auto; }
+
+section#instagram {
+  width: 85%;
+  min-width: 740px;
+  margin: 0 auto; }
+
+footer {
+  width: 85%;
+  min-width: 740px;
+  margin: 0 auto; }

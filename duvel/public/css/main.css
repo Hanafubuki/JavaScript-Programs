@@ -57,33 +57,28 @@ section#thebeer {
   /* deixa o tam do height do pai igual ao tamanho dos filhos */
   height: auto;
   /* deixa o tam do height do pai igual ao tamanho dos filhos */
-  /* width: 100%;  deixa o tam do height do pai igual ao tamanho dos filhos */ }
-  section#thebeer .beercontainer {
-    width: 90%;
-    min-width: 740px;
-    margin: 0 auto; }
+  width: 100%;
+  /* deixa o tam do height do pai igual ao tamanho dos filhos */ }
   section#thebeer .content h2 {
     font-size: 25px;
     font-weight: normal;
     color: #333;
-    text-align: justify; }
+    text-align: justify;
+    overflow-wrap: break-word; }
 
 section#celebrating {
   clear: left;
   padding-top: 100px;
-  width: 90%;
-  min-width: 740px;
-  margin: 0 auto;
   margin-bottom: 100px;
   height: auto;
   /* deixa o tam do height do pai igual ao tamanho dos filhos */
   overflow: auto;
-  /* deixa o tam do height do pai igual ao tamanho dos filhos */ }
-  section#celebrating .celebratingcontainer {
-    float: left;
-    margin-bottom: 100px; }
+  /* deixa o tam do height do pai igual ao tamanho dos filhos */
+  width: 100%;
+  /* deixa o tam do height do pai igual ao tamanho dos filhos */
+  border-top: 3px solid #E1E1E1; }
   section#celebrating .beers {
-    clear: left; }
+    margin-top: 80px; }
     section#celebrating .beers img {
       width: 100%; }
     section#celebrating .beers .boxbeer {
@@ -129,17 +124,14 @@ section#celebrating {
       margin-left: 10%; }
       section#celebrating .beers .right .more {
         position: absolute;
-        left: 90%; }
+        right: 10%; }
 
 section#since1871 {
   background-color: #b3b3b3;
   text-align: center; }
   section#since1871 .video {
     position: relative;
-    height: 0;
-    width: 80%;
-    min-width: 740px;
-    margin: 0 auto; }
+    height: 0; }
     section#since1871 .video iframe {
       position: absolute;
       top: 0;
@@ -149,9 +141,6 @@ section#since1871 {
       border: 0; }
 
 section#instagram {
-  width: 85%;
-  min-width: 740px;
-  margin: 0 auto;
   padding-top: 100px;
   margin-bottom: 100px; }
   section#instagram img {
@@ -159,9 +148,6 @@ section#instagram {
     margin-top: 20px; }
 
 footer {
-  width: 85%;
-  min-width: 740px;
-  margin: 0 auto;
   margin-top: 30px;
   padding-bottom: 70px; }
   footer img {
