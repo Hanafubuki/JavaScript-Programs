@@ -1,5 +1,5 @@
 $white: #fff;
-$red: #e74c3c;
+$red: #ee1b2e;
 $grey: #333;
 $lightgrey:#E1E1E1;
 
@@ -36,12 +36,23 @@ a{
   margin: 0 auto;
 }
 
-h1{
+h1,h3{
    	font-size: 60px;
 	font-weight: normal;
 	color: $red;
 	text-transform: uppercase;
 }
+
+h1{
+   	font-size: 60px;
+}
+
+h3{
+   	font-size: 30px;
+
+}
+
+
 
 /*---------- Navbar ----------*/
 nav.top {
@@ -104,12 +115,17 @@ header.large {
 
 
 
-/*---------- Section Beer ----------*/
-@mixin sectioncontainer{
-	width:90%;
+/*---------- Sections ----------*/
+@mixin sectioncontainer($w){
+	width:$w;
 	min-width: 740px;
 	margin: 0 auto;
 }
+
+.divider{
+	border-top: 3px solid $lightgrey;
+}
+
 section#thebeer{
 	padding-top: 20%;
 	
@@ -121,7 +137,7 @@ section#thebeer{
 	height: auto; /* deixa o tam do height do pai igual ao tamanho dos filhos */
 	/* width: 100%;  deixa o tam do height do pai igual ao tamanho dos filhos */
     .beercontainer{
-    	@include sectioncontainer;
+    	@include sectioncontainer(90%);
     }
 
     .content{
@@ -144,9 +160,8 @@ section#thebeer{
 
 section#celebrating{
 	clear: left;
-	border-top: 3px solid $lightgrey;
 	padding-top: 100px;
-	@include sectioncontainer;
+	@include sectioncontainer(90%);
 	margin-bottom: 100px;
 	height: auto;   /* deixa o tam do height do pai igual ao tamanho dos filhos */
 	overflow: auto; /* deixa o tam do height do pai igual ao tamanho dos filhos */
@@ -216,7 +231,48 @@ section#celebrating{
 
 
 section#since1871{
-	background-color: $lightgrey;
+	background-color: #b3b3b3;
 	text-align: center;
 	padding-top: 80px;
+
+	.video{
+		position: relative;
+		padding-bottom: 40%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+		@include sectioncontainer(80%);
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 90%;
+		}
+	}
+}
+
+section#instagram{
+	@include sectioncontainer(85%);
+	padding-top: 100px;
+	margin-bottom: 100px;
+	img{
+		display: inline-block;
+		margin-top: 20px;
+	}
+}
+
+footer{
+	@include sectioncontainer(85%);
+	margin-top: 30px;
+	padding-bottom: 70px;
+	img{
+		float: left;
+	}
+	p{
+		float: right;
+		margin-top: 30px;
+		color: #b3b3b3;
+		font-size: 18px;
+	}
+	
 }
