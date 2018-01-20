@@ -41,6 +41,8 @@ nav.top {
   margin: 0; }
   nav.top ul li {
     display: inline; }
+  nav.top ul .active > a {
+    border-bottom: 3px solid #ee1b2e; }
 
 .icon {
   overflow: hidden;

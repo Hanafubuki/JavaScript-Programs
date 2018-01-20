@@ -24,16 +24,16 @@
       <img class="logo" src="img/duvel_logo.png">
       <nav class="top" id="toggleNav">
           <ul>        
-            <li><a class="topmenu" href="#thebeer">The Beer</a></li>
-            <li><a class="topmenu" href="#celebrating">Celebrating Mastery</a></li>
-            <li><a class="topmenu" href="#since1871">Since 1871</a></li>
+            <li><a class="topmenu" href="#" data-scroll="thebeer">The Beer</a></li>
+            <li><a class="topmenu" href="#" data-scroll="celebrating">Celebrating Mastery</a></li>
+            <li><a class="topmenu" href="#" data-scroll="since1871">Since 1871</a></li>
           </ul>
       </nav>
       <a href="javascript:void(0);" class="icon" onclick="menuFunction()"><i class="fa fa-bars"></i></a>
     </div>
   </header>
 
-    <section id="thebeer" >
+    <section id="thebeer" data-anchor="thebeer">
         <div class="beercontainer">
           <div class="content">
             <h1>Lorem ipsum dolor</h1>
@@ -43,7 +43,7 @@
         </div>
     </section>
 
-    <section id="celebrating">   
+    <section id="celebrating" data-anchor="celebrating">   
        <div class="celebratingcontainer">
           <h1>Mastery in Beer</h1>
           Sit amet, consectetur adipiscing elit. Nam ac eleifend nunc, ut rutrum erat. <br>
@@ -90,7 +90,7 @@
       </div>
     </section>
 
-    <section id="since1871">
+    <section id="since1871" data-anchor="since1871">
       <div class="video">
         <iframe width="80%" height="auto" src="https://www.youtube.com/embed/Me92JY0QCvA?rel=0&hd=1"></iframe>
       </div>
@@ -115,6 +115,7 @@
   </div>
 
  <!--<script src="js/scripts.js"></script>-->
+ <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
     function menuFunction() {
         var x = document.getElementById("toggleNav");
@@ -124,6 +125,21 @@
             x.className = "top";
         }
     }
+
+
+
+    $('nav ul li a').on('click', function() {
+        var scrollAnchor = $(this).attr('data-scroll'),
+            scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 48;
+
+        $('body,html').animate({
+            scrollTop: scrollPoint
+        }, 800);
+
+        return false;
+
+    }).scroll(); 
+  
   </script>
 </body>
 </html>

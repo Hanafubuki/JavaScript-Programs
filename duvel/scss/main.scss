@@ -57,7 +57,11 @@ nav.top {
 		li {
 			display: inline;
 		}
+		.active > a {
+  			border-bottom: 3px solid $red;
+		}
 	}
+
 }	
 	.icon{
 		overflow: hidden;
