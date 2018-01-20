@@ -1,4 +1,7 @@
 $white: #fff;
+$red: #ff1d1a;
+$grey: #333;
+$lightgrey:#E1E1E1;
 
 *, 
 *:before, 
@@ -12,6 +15,11 @@ $white: #fff;
 
 body {
 	background-color: $white;
+}
+
+body, html {
+	height: 100%; /* Put background-img full screen */
+	font-family: 'Teko', sans-serif;
 }
 
 a{
@@ -29,8 +37,9 @@ a{
 /*---------- Navbar ----------*/
 nav.top {
 	width: 100%;
-	margin: 0 auto;
-		
+	margin: 0;
+	position: fixed;
+
 	ul {
 		float: left;
 
@@ -55,6 +64,7 @@ header {
 	-webkit-box-shadow:0px 0px 4px 0px #333; 
 	-moz-box-shadow:0px 0px 4px 0px #333; 
 	box-shadow: 0px 0px 4px 0px #333;
+	background-color: $white;
 	a {
 		color: #666;
 		text-transform: uppercase;
@@ -69,7 +79,6 @@ header {
 	}
 }
 
-
 /* header large */
 header.large {
 	height: 140px;
@@ -82,4 +91,59 @@ header.large {
 		margin-top: 85px;
 		margin-left: 50px;
 	}
+}
+
+
+
+/*---------- Section Beer ----------*/
+@mixin sectioncontainer{
+	width:90%;
+	min-width: 740px;
+	margin: 0 auto;
+}
+section.beer{
+	padding-top: 250px;
+	height: 100%;
+	background:url("../img/lines_left.png") no-repeat left top 180px , 
+               url("../img/lines_right.png") no-repeat right bottom;
+    background-size: 100px, 60px;
+    margin-bottom: 300px;
+
+    .beercontainer{
+    	@include sectioncontainer;
+    }
+
+    .content{
+    	float: left;
+    	width: 45%;
+    	margin-top: 150px;
+    	h1{
+	    	font-size: 40px;
+	    	font-weight: normal;
+	    	color: $red;
+	    	text-transform: uppercase;
+	    }
+
+	    h2{
+	    	font-size: 25px;
+	    	font-weight: normal;
+	    	color: $grey;
+	    	text-align: justify;
+	    }
+	}
+    img{
+    	float: left;
+    	height: 580px;
+    	margin-left: 60px;
+    }
+}
+
+section#celebrating{
+	clear: left;
+	border-top: 3px solid $lightgrey;
+	padding-top: 100px;
+	margin-bottom: 100px;
+	.celebratingcontainer{
+    	@include sectioncontainer;
+    }
 }
