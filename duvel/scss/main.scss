@@ -183,6 +183,7 @@ section#celebrating{
     		text-align: center;
     		text-transform: uppercase;
     		padding-top: 30px;
+    		padding-bottom: 30px;
     		h2{
     			font-size: 42px;
     			color: #000;
@@ -192,9 +193,14 @@ section#celebrating{
     			}
     		}
 
+    		.more{
+    			position: absolute;
+    			right: 56%;
+    		}
+
     		a{
     			margin-top: 10px;
-    			margin-right: 20px;
+    			
 				width: 100px;
 				font-size: 30px;
 				height:40px;
@@ -205,7 +211,6 @@ section#celebrating{
 				font-family: 'Teko', sans-serif;
 				color: $white;
 				text-transform: uppercase;
-
 				i{
 				    border: solid black;
 				    margin-top: -10px;
@@ -223,6 +228,11 @@ section#celebrating{
     	.right{
     			margin-top: 22%;
     			margin-left: 130px;
+
+    			.more{
+    				position: absolute;
+    				right: 10%;
+    			}
     		}
 
     }

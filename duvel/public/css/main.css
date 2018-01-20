@@ -141,15 +141,18 @@ section#celebrating {
       margin-left: 60px;
       text-align: center;
       text-transform: uppercase;
-      padding-top: 30px; }
+      padding-top: 30px;
+      padding-bottom: 30px; }
       section#celebrating .beers .boxbeer h2 {
         font-size: 42px;
         color: #000; }
         section#celebrating .beers .boxbeer h2 span {
           color: #ee1b2e; }
+      section#celebrating .beers .boxbeer .more {
+        position: absolute;
+        right: 56%; }
       section#celebrating .beers .boxbeer a {
         margin-top: 10px;
-        margin-right: 20px;
         width: 100px;
         font-size: 30px;
         height: 40px;
@@ -172,6 +175,9 @@ section#celebrating {
     section#celebrating .beers .right {
       margin-top: 22%;
       margin-left: 130px; }
+      section#celebrating .beers .right .more {
+        position: absolute;
+        right: 10%; }
 
 section#since1871 {
   background-color: #b3b3b3;
