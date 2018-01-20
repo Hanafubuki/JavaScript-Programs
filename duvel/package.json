@@ -4,8 +4,10 @@
   "description": "duvel website",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build-css-main": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "watch-css-main": "nodemon -e scss -x \"npm run build-css-main\"",
+    "build-css-mobile": "node-sass --include-path scss scss/mobile.scss   public/css/mobile.css",
+    "watch-css-mobile": "nodemon -e scss -x \"npm run build-css-mobile\""
   },
   "author": "Michele Weber",
   "license": "ISC",
