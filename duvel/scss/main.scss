@@ -112,12 +112,14 @@ header.large {
 }
 section#thebeer{
 	padding-top: 20%;
-	height: 100%;
+	
 	background:url("../img/lines_left.png") no-repeat left top 180px , 
                url("../img/lines_right.png") no-repeat right bottom;
     background-size: 100px, 60px;
-    margin-bottom: 300px;
-
+    margin-bottom: 200px;
+    overflow: auto; /* deixa o tam do height do pai igual ao tamanho dos filhos */
+	height: auto; /* deixa o tam do height do pai igual ao tamanho dos filhos */
+	/* width: 100%;  deixa o tam do height do pai igual ao tamanho dos filhos */
     .beercontainer{
     	@include sectioncontainer;
     }
@@ -144,14 +146,16 @@ section#celebrating{
 	clear: left;
 	border-top: 3px solid $lightgrey;
 	padding-top: 100px;
-	padding-bottom: 200px;
 	@include sectioncontainer;
+	margin-bottom: 100px;
+	height: auto;   /* deixa o tam do height do pai igual ao tamanho dos filhos */
+	overflow: auto; /* deixa o tam do height do pai igual ao tamanho dos filhos */
+
 	.celebratingcontainer{
     	width:40%;
     	float: left;
     	margin-bottom: 100px;	
     }
-
     .beers{
     	clear: left;
     	img{
@@ -165,7 +169,6 @@ section#celebrating{
     		text-align: center;
     		text-transform: uppercase;
     		padding-top: 30px;
-
     		h2{
     			font-size: 42px;
     			color: #000;
@@ -209,9 +212,11 @@ section#celebrating{
     		}
 
     }
-    
-}
+}    
+
 
 section#since1871{
-	background-color: $grey;
+	background-color: $lightgrey;
+	text-align: center;
+	padding-top: 80px;
 }
