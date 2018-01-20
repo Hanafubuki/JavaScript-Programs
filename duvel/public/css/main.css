@@ -89,9 +89,9 @@ header.large {
   border-top: 3px solid #E1E1E1; }
 
 section#thebeer {
-  padding-top: 20%;
+  padding-top: 230px;
   background: url("../img/lines_left.png") no-repeat left top 180px, url("../img/lines_right.png") no-repeat right bottom;
-  background-size: 100px, 60px;
+  background-size: 80px, 70px;
   margin-bottom: 200px;
   overflow: auto;
   /* deixa o tam do height do pai igual ao tamanho dos filhos */
@@ -113,7 +113,7 @@ section#thebeer {
       text-align: justify; }
   section#thebeer img {
     float: left;
-    height: 580px;
+    width: 45%;
     margin-left: 60px; }
 
 section#celebrating {
@@ -128,7 +128,6 @@ section#celebrating {
   overflow: auto;
   /* deixa o tam do height do pai igual ao tamanho dos filhos */ }
   section#celebrating .celebratingcontainer {
-    width: 40%;
     float: left;
     margin-bottom: 100px; }
   section#celebrating .beers {
@@ -192,7 +191,8 @@ section#since1871 {
       top: 0;
       left: 0;
       width: 100%;
-      height: 90%; }
+      height: 90%;
+      border: 0; }
 
 section#instagram {
   width: 85%;
