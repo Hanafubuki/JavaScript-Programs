@@ -7,7 +7,9 @@
     "build-css-main": "node-sass --include-path scss scss/main.scss   public/css/main.css",
     "watch-css-main": "nodemon -e scss -x \"npm run build-css-main\"",
     "build-css-mobile": "node-sass --include-path scss scss/mobile.scss   public/css/mobile.css",
-    "watch-css-mobile": "nodemon -e scss -x \"npm run build-css-mobile\""
+    "watch-css-mobile": "nodemon -e scss -x \"npm run build-css-mobile\"",
+    "build-css-pc": "node-sass --include-path scss scss/pc.scss   public/css/pc.css",
+    "watch-css-pc": "nodemon -e scss -x \"npm run build-css-pc\""
   },
   "author": "Michele Weber",
   "license": "ISC",

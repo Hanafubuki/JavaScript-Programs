@@ -30,12 +30,6 @@ a{
 	font-color: $grey;
 }
 
-.container {
-  width: 90%;
-  min-width: 740px;
-  margin: 0 auto;
-}
-
 h1,h3{
    	font-size: 60px;
 	font-weight: normal;
@@ -58,61 +52,17 @@ h3{
 nav.top {
 	width: 100%;
 	margin: 0;
-	position: fixed;
 
 	ul {
-		float: left;
-
 		li {
 			display: inline;
-			float: left;
-			font-size: 20px;
 		}
 	}
 }
 
 .icon {
     overflow: hidden;
-    display: none;
 }
-
-/*---------- Header ----------*/
-header {
-	width: 100%;
-	position: fixed;
-	z-index: 10;
-	-webkit-box-shadow:0px 0px 4px 0px #333; 
-	-moz-box-shadow:0px 0px 4px 0px #333; 
-	box-shadow: 0px 0px 4px 0px #333;
-	background-color: $white;
-	a {
-		color: #666;
-		text-transform: uppercase;
-		font-size: 1.2em;
-	}
-	a.active, a:hover {
-		color: #3d3d3d;
-	}
-
-	li {
-		margin-right: -30px;
-	}
-}
-
-/* header large */
-header.large {
-	height: 140px;
-
-	img {
-	  margin-top: 20px;
-	  float: left;
-	}
-	li {
-		margin-top: 85px;
-		margin-left: 50px;
-	}
-}
-
 
 
 /*---------- Sections ----------*/
@@ -127,7 +77,6 @@ header.large {
 }
 
 section#thebeer{
-	padding-top: 230px;
 	
 	background:url("../img/lines_left.png") no-repeat left top 180px , 
                url("../img/lines_right.png") no-repeat right bottom;
@@ -179,7 +128,7 @@ section#celebrating{
     		background-color: $lightgrey;
     		float: left;
     		width: 40%;
-    		margin-left: 60px;
+    		margin-left: 5%;
     		text-align: center;
     		text-transform: uppercase;
     		padding-top: 30px;
@@ -231,7 +180,7 @@ section#celebrating{
 
     			.more{
     				position: absolute;
-    				right: 10%;
+    				left: 90%;
     			}
     		}
 
