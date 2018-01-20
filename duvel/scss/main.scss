@@ -77,7 +77,6 @@ nav.top {
 }
 
 section#thebeer{
-	
 	background:url("../img/lines_left.png") no-repeat left top 180px , 
                url("../img/lines_right.png") no-repeat right bottom;
     background-size: 80px, 70px;
@@ -90,9 +89,6 @@ section#thebeer{
     }
 
     .content{
-    	float: left;
-    	width: 45%;
-    	margin-top: 150px;
 	    h2{
 	    	font-size: 25px;
 	    	font-weight: normal;
@@ -100,11 +96,6 @@ section#thebeer{
 	    	text-align: justify;
 	    }
 	}
-    img{
-    	float: left;
-    	width: 45%;
-    	margin-left: 60px;
-    }
 }
 
 section#celebrating{
@@ -176,7 +167,7 @@ section#celebrating{
     	}
     	.right{
     			margin-top: 22%;
-    			margin-left: 130px;
+    			margin-left: 10%;
 
     			.more{
     				position: absolute;
@@ -191,12 +182,9 @@ section#celebrating{
 section#since1871{
 	background-color: #b3b3b3;
 	text-align: center;
-	padding-top: 80px;
 
 	.video{
 		position: relative;
-		padding-bottom: 40%; /* 16:9 */
-		padding-top: 25px;
 		height: 0;
 		@include sectioncontainer(80%);
 		iframe {

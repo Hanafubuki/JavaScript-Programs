@@ -46,4 +46,20 @@ header.large {
 
 /*---------- Sections ----------*/
 section#thebeer {
-  padding-top: 230px; }
+  padding-top: 230px;
+  float: left; }
+  section#thebeer .content {
+    clear: left;
+    width: 45%;
+    float: left;
+    margin-top: 150px; }
+  section#thebeer img {
+    float: left;
+    width: 45%;
+    margin-left: 60px; }
+
+section#since1871 {
+  padding-top: 80px; }
+  section#since1871 .video {
+    padding-top: 25px;
+    padding-bottom: 40%; }

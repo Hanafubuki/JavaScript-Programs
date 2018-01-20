@@ -62,19 +62,11 @@ section#thebeer {
     width: 90%;
     min-width: 740px;
     margin: 0 auto; }
-  section#thebeer .content {
-    float: left;
-    width: 45%;
-    margin-top: 150px; }
-    section#thebeer .content h2 {
-      font-size: 25px;
-      font-weight: normal;
-      color: #333;
-      text-align: justify; }
-  section#thebeer img {
-    float: left;
-    width: 45%;
-    margin-left: 60px; }
+  section#thebeer .content h2 {
+    font-size: 25px;
+    font-weight: normal;
+    color: #333;
+    text-align: justify; }
 
 section#celebrating {
   clear: left;
@@ -134,20 +126,16 @@ section#celebrating {
           -webkit-transform: rotate(-45deg); }
     section#celebrating .beers .right {
       margin-top: 22%;
-      margin-left: 130px; }
+      margin-left: 10%; }
       section#celebrating .beers .right .more {
         position: absolute;
         left: 90%; }
 
 section#since1871 {
   background-color: #b3b3b3;
-  text-align: center;
-  padding-top: 80px; }
+  text-align: center; }
   section#since1871 .video {
     position: relative;
-    padding-bottom: 40%;
-    /* 16:9 */
-    padding-top: 25px;
     height: 0;
     width: 80%;
     min-width: 740px;

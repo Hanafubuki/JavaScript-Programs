@@ -8,6 +8,8 @@
     "watch-css-main": "nodemon -e scss -x \"npm run build-css-main\"",
     "build-css-mobile": "node-sass --include-path scss scss/mobile.scss   public/css/mobile.css",
     "watch-css-mobile": "nodemon -e scss -x \"npm run build-css-mobile\"",
+    "build-css-tablet": "node-sass --include-path scss scss/tablet.scss   public/css/tablet.css",
+    "watch-css-tablet": "nodemon -e scss -x \"npm run build-css-tablet\"",
     "build-css-pc": "node-sass --include-path scss scss/pc.scss   public/css/pc.css",
     "watch-css-pc": "nodemon -e scss -x \"npm run build-css-pc\""
   },
