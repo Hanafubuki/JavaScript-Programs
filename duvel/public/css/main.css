@@ -14,7 +14,9 @@ body {
 body, html {
   height: 100%;
   /* Put background-img full screen */
-  font-family: 'Teko', sans-serif; }
+  font-family: 'Teko', sans-serif;
+  font-size: 22px;
+  color: #333; }
 
 a {
   text-decoration: none;
@@ -25,6 +27,12 @@ a {
   width: 90%;
   min-width: 740px;
   margin: 0 auto; }
+
+h1 {
+  font-size: 60px;
+  font-weight: normal;
+  color: #e74c3c;
+  text-transform: uppercase; }
 
 /*---------- Navbar ----------*/
 nav.top {
@@ -71,31 +79,26 @@ header.large {
     margin-left: 50px; }
 
 /*---------- Section Beer ----------*/
-section.beer {
-  padding-top: 250px;
+section#thebeer {
+  padding-top: 20%;
   height: 100%;
   background: url("../img/lines_left.png") no-repeat left top 180px, url("../img/lines_right.png") no-repeat right bottom;
   background-size: 100px, 60px;
   margin-bottom: 300px; }
-  section.beer .beercontainer {
+  section#thebeer .beercontainer {
     width: 90%;
     min-width: 740px;
     margin: 0 auto; }
-  section.beer .content {
+  section#thebeer .content {
     float: left;
     width: 45%;
     margin-top: 150px; }
-    section.beer .content h1 {
-      font-size: 40px;
-      font-weight: normal;
-      color: #ff1d1a;
-      text-transform: uppercase; }
-    section.beer .content h2 {
+    section#thebeer .content h2 {
       font-size: 25px;
       font-weight: normal;
       color: #333;
       text-align: justify; }
-  section.beer img {
+  section#thebeer img {
     float: left;
     height: 580px;
     margin-left: 60px; }
@@ -104,8 +107,56 @@ section#celebrating {
   clear: left;
   border-top: 3px solid #E1E1E1;
   padding-top: 100px;
-  margin-bottom: 100px; }
+  padding-bottom: 200px;
+  width: 90%;
+  min-width: 740px;
+  margin: 0 auto; }
   section#celebrating .celebratingcontainer {
-    width: 90%;
-    min-width: 740px;
-    margin: 0 auto; }
+    width: 40%;
+    float: left;
+    margin-bottom: 100px; }
+  section#celebrating .beers {
+    clear: left; }
+    section#celebrating .beers img {
+      width: 100%; }
+    section#celebrating .beers .boxbeer {
+      background-color: #E1E1E1;
+      float: left;
+      width: 40%;
+      margin-left: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 30px; }
+      section#celebrating .beers .boxbeer h2 {
+        font-size: 42px;
+        color: #000; }
+        section#celebrating .beers .boxbeer h2 span {
+          color: #e74c3c; }
+      section#celebrating .beers .boxbeer a {
+        margin-top: 10px;
+        margin-right: 20px;
+        width: 100px;
+        font-size: 30px;
+        height: 40px;
+        background-color: #e74c3c;
+        border: none;
+        border-radius: 5px;
+        float: right;
+        font-family: 'Teko', sans-serif;
+        color: #fff;
+        text-transform: uppercase; }
+        section#celebrating .beers .boxbeer a i {
+          border: solid black;
+          margin-top: -10px;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 3px; }
+        section#celebrating .beers .boxbeer a .arrow {
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg); }
+    section#celebrating .beers .right {
+      margin-top: 22%;
+      margin-left: 130px; }
+
+section#since1871 {
+  background-color: #333; }
