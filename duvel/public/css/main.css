@@ -59,7 +59,7 @@ nav.top {
 section#thebeer {
   background: url("../img/lines_left.png") no-repeat left top 180px, url("../img/lines_right.png") no-repeat right bottom;
   background-size: 80px, 70px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   overflow: auto;
   /* deixa o tam do height do pai igual ao tamanho dos filhos */
   height: auto;
@@ -115,28 +115,40 @@ section#celebrating {
         transition: all .5s; }
       section#celebrating .beers .boxbeer .more {
         position: absolute;
-        right: 56%; }
+        right: 57%; }
       section#celebrating .beers .boxbeer a {
         margin-top: 10px;
-        width: 100px;
+        width: 125px;
         font-size: 30px;
         height: 40px;
         background-color: #ee1b2e;
         border: none;
         border-radius: 5px;
         float: right;
+        padding-right: 20px;
         font-family: 'Teko', sans-serif;
         color: #fff;
         text-transform: uppercase; }
-        section#celebrating .beers .boxbeer a i {
-          border: solid black;
-          margin-top: -10px;
-          border-width: 0 3px 3px 0;
-          display: inline-block;
-          padding: 3px; }
-        section#celebrating .beers .boxbeer a .arrow {
-          transform: rotate(-45deg);
-          -webkit-transform: rotate(-45deg); }
+        section#celebrating .beers .boxbeer a:after, section#celebrating .beers .boxbeer a:before {
+          content: "";
+          display: block;
+          position: absolute;
+          transition: all 0.5s ease-in-out; }
+        section#celebrating .beers .boxbeer a:before {
+          top: 56%;
+          right: 20px;
+          width: 14px;
+          height: 14px;
+          transform-origin: 50% 50%;
+          transform: translate(0, -7px) rotate(45deg);
+          box-shadow: inset -3px 3px 0 0 #fff; }
+        section#celebrating .beers .boxbeer a:after {
+          top: 56%;
+          right: 20px;
+          width: 18.2px;
+          height: 3px;
+          transform: translate(0, -1.5px);
+          background-color: #fff; }
     section#celebrating .beers .boxbeer:hover img, section#celebrating .beers .boxbeer:hover h2, section#celebrating .beers .boxbeer:hover .more,
     section#celebrating .beers .boxbeer:focus img, section#celebrating .beers .boxbeer:focus h2, section#celebrating .beers .boxbeer:focus .more {
       transform: scale(1.2); }
