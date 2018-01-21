@@ -25,6 +25,28 @@ nav.top {
 
 	}
 
+	.icon{
+		float: right;
+    	right: 0;
+    	top: 0;
+    	position: absolute;
+    	font-size:36px;
+		display:inline-block;
+		padding:8px 16px;
+	}
+
+	.responsive{
+		height:1000px;
+		width:100%;
+		padding-top:50px;
+		position:relative;
+		z-index:0;
+		overflow:auto;
+		background-color:#000;
+		font-size:36px;
+		animation:animatetop 0.4s
+	}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
 	.topmenu{
 		width:100%;
 		display:block;
@@ -200,7 +222,14 @@ section#since1871{
 
 
 section#instagram{
+	text-align: center;
 	img{
 		width: 150px;
+	}
+}
+
+footer{
+	p{
+		margin-right: 10px;
 	}
 }
