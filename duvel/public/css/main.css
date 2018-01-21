@@ -42,10 +42,10 @@ nav.top {
   nav.top ul li {
     display: inline; }
     nav.top ul li a.topmenu {
-      -webkit-transition: all .5s;
-      -moz-transition: all .5s;
-      -o-transition: all .5s;
-      transition: all .5s; }
+      -webkit-transition: all .4s;
+      -moz-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s; }
   nav.top ul .active > a {
     border-bottom: 3px solid #ee1b2e; }
 
@@ -59,15 +59,12 @@ nav.top {
 section#thebeer {
   background: url("../img/lines_left.png") no-repeat left top 180px, url("../img/lines_right.png") no-repeat right bottom;
   background-size: 80px, 70px;
-  margin-bottom: 100px;
-  overflow: auto;
-  /* deixa o tam do height do pai igual ao tamanho dos filhos */
   height: auto;
   /* deixa o tam do height do pai igual ao tamanho dos filhos */
   width: 100%;
   /* deixa o tam do height do pai igual ao tamanho dos filhos */ }
   section#thebeer .content h2 {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: normal;
     color: #333;
     text-align: justify;
@@ -157,7 +154,7 @@ section#celebrating {
       margin-left: 10%; }
       section#celebrating .beers .right .more {
         position: absolute;
-        right: 10%; }
+        left: 87%; }
 
 section#since1871 {
   background-color: #b3b3b3;

@@ -100,7 +100,9 @@ header.small {
 /*---------- Sections ----------*/
 section#thebeer {
   padding-top: 120px;
-  background: none; }
+  background: none;
+  height: 100%;
+  margin-bottom: 50px; }
   section#thebeer .content {
     width: 100%;
     margin: 0 auto;
@@ -127,7 +129,8 @@ section#thebeer {
         margin-left: 0; } }
 
 section#celebrating {
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: 50px; }
   section#celebrating .celebratingcontainer {
     width: 100%;
     margin: 0 auto;
@@ -169,16 +172,19 @@ section#celebrating {
       padding-left: 10px; }
 
 section#since1871 {
-  padding-top: 40px; }
+  padding-top: 20px; }
   section#since1871 .video {
     position: relative;
-    padding-bottom: 67%;
+    padding-bottom: 65%;
     /* 16:9 */ }
 
 section#instagram {
-  text-align: center; }
+  text-align: center;
+  padding-top: 50px; }
   section#instagram img {
     width: 150px; }
 
-footer p {
-  margin-right: 10px; }
+footer {
+  padding-top: 20px; }
+  footer p {
+    margin-right: 10px; }

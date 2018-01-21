@@ -87,14 +87,8 @@ section#thebeer{
     .beercontainer{
     	@include sectioncontainer(90%);
     }
-
-    .beerimage{
-    	height: 100vh;
-    }
    img{
-    	max-width: 100%;
- 		max-height:67%;
- 		margin-left: 60px;
+    	margin-left: 60px;
     	float: left;
     }
 }
@@ -104,14 +98,12 @@ section#celebrating{
 		@include sectioncontainer(90%);
 	}
 	.beers{
-		text-align: center;
 		margin-left: 5%;
 		img{
 	    	width: 100%;
 	    }
 		.boxbeer{
-    		max-width: 470px;
-
+    		width: 40%;
     	}
     }
  }

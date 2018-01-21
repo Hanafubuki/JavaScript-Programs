@@ -100,7 +100,8 @@ header.small {
 /*---------- Sections ----------*/
 section#thebeer {
   padding-top: 120px;
-  float: left; }
+  float: left;
+  margin-bottom: 80px; }
   section#thebeer .content {
     clear: left;
     width: 45%;
@@ -120,13 +121,14 @@ section#thebeer {
     width: 42%;
     margin-left: 20px; }
 
-section#celebrating .celebratingcontainer {
-  width: 90%;
-  min-width: 740px;
-  margin: 0 auto; }
-
-section#celebrating .beer {
-  margin-left: 5%; }
+section#celebrating {
+  padding-top: 80px; }
+  section#celebrating .celebratingcontainer {
+    width: 90%;
+    min-width: 740px;
+    margin: 0 auto; }
+  section#celebrating .beers .right .more {
+    right: 8%; }
 
 section#since1871 {
   padding-top: 40px; }

@@ -60,10 +60,10 @@ nav.top {
 		li {
 			display: inline;
 			a.topmenu{ //smooth mouse hover
-				-webkit-transition: all .4s;
-			    -moz-transition: all .4s;
-			    -o-transition: all .4s;
-			    transition: all .4s;
+				-webkit-transition: all .5s;
+			    -moz-transition: all .5s;
+			    -o-transition: all .5s;
+			    transition: all .5s;
 			}
 		}
 		.active > a {
@@ -90,7 +90,7 @@ section#thebeer{
 	background:url("../img/lines_left.png") no-repeat left top 180px, 
                url("../img/lines_right.png") no-repeat right bottom;
     background-size: 80px, 70px;
-	height: auto; /* deixa o tam do height do pai igual ao tamanho dos filhos */
+	height: 100vh; /* deixa o tam do height do pai igual ao tamanho dos filhos */
 	width: 100%; /* deixa o tam do height do pai igual ao tamanho dos filhos */
     .content{
 	    h2{
@@ -101,6 +101,14 @@ section#thebeer{
 	    	overflow-wrap: break-word;
 	    }
 	}
+
+	.beerimage{
+    	height: 100vh;
+    }
+   img{
+    	max-width: 100%;
+ 		max-height:70%;
+    }
 }
 
 section#celebrating{
@@ -206,13 +214,15 @@ section#celebrating{
 		}
 
     	.right{
-    		margin-top: 22%;
-    		margin-left: 10%;
-   			.more{
-   				position: absolute;
-   				left: 87%;
-   			}
-   		}
+    			margin-top: 22%;
+    			margin-left: 10%;
+
+    			.more{
+    				position: absolute;
+    				right: 10%;
+    			}
+    		}
+
     }
 }    
 

@@ -120,6 +120,8 @@ header.small {
 section#thebeer{
 	padding-top: 120px;
 	background:none;
+	height: 100%;
+	margin-bottom: 50px;
 	.content{
 		width: 100%;
 		margin: 0 auto;
@@ -129,8 +131,9 @@ section#thebeer{
 	}
 	h2{
 		background-color: #fff;
-	}
 
+	}
+	
 	.beerimage{
 		width: 80%;
 		float: right;
@@ -155,6 +158,7 @@ section#thebeer{
 
 section#celebrating{
 	overflow: hidden;
+	padding-top: 50px;
 	.celebratingcontainer{
 		width: 100%;
 		margin: 0 auto;
@@ -212,23 +216,24 @@ section#celebrating{
 
 
 section#since1871{
-	padding-top: 40px;
-
+	padding-top: 20px;
 	.video{
 		position: relative;
-		padding-bottom: 67%; /* 16:9 */
+		padding-bottom: 65%; /* 16:9 */
 	}
 }
 
 
 section#instagram{
 	text-align: center;
+	padding-top: 50px;
 	img{
 		width: 150px;
 	}
 }
 
 footer{
+	padding-top: 20px;
 	p{
 		margin-right: 10px;
 	}
