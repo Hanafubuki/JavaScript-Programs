@@ -56,12 +56,17 @@ nav.top {
 	ul {
 		li {
 			display: inline;
+			a.topmenu{ //smooth mouse hover
+				-webkit-transition: all .5s;
+			    -moz-transition: all .5s;
+			    -o-transition: all .5s;
+			    transition: all .5s;
+			}
 		}
 		.active > a {
   			border-bottom: 3px solid $red;
-		}
+		}		
 	}
-
 }	
 	.icon {
     overflow: hidden;
@@ -114,6 +119,13 @@ section#celebrating{
     	img{
 	    	width: 100%;
 	    }
+
+	    .boxbeer:hover{ //effect: red border on hover
+			  -webkit-box-shadow: 0px 0px 20px 0px rgba(204, 0, 0, 0.6);
+			  -moz-box-shadow:    0px 0px 20px 0px rgba(204, 0, 0, 0.6);
+			  box-shadow:         0px 0px 20px 0px rgba(204, 0, 0, 0.6);
+	    }
+
     	.boxbeer{
     		background-color: $lightgrey;
     		float: left;
@@ -125,6 +137,8 @@ section#celebrating{
     		padding-bottom: 30px;
     		cursor: pointer;
 
+    		transition: box-shadow 0.5s;//effect: red border on hover
+
     		h2{
     			font-size: 42px;
     			color: #000;
@@ -134,7 +148,7 @@ section#celebrating{
     			}
     		}
 
-    		h2,img{ //effect: make img bigger
+    		h2,img,.more{ //effect: make img bigger
     			-webkit-transition: all .5s;
 			    -moz-transition: all .5s;
 			    -o-transition: all .5s;
@@ -174,8 +188,8 @@ section#celebrating{
     		}
     	}
 
-    	.boxbeer:hover img, .boxbeer:hover h2, 
-		.boxbeer:focus img, .boxbeer:focus h2 { // effect: make img bigger
+    	.boxbeer:hover img, .boxbeer:hover h2, .boxbeer:hover .more, 
+		.boxbeer:focus img, .boxbeer:focus h2, .boxbeer:focus .more { // effect: make img bigger
 		  transform: scale(1.2);
 		}
 
@@ -214,9 +228,14 @@ section#since1871{
 section#instagram{
 	padding-top: 100px;
 	padding-bottom: 80px;
+
 	img{
 		display: inline-block;
 		margin-top: 20px;
+	}
+	
+	img,h3{
+		cursor: pointer;
 	}
 }
 

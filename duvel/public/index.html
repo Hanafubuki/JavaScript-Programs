@@ -24,12 +24,12 @@
       <img class="logo" src="img/duvel_logo.png">
       <nav class="top" id="toggleNav">
           <ul>        
-            <li><a class="topmenu" href="#" data-scroll="thebeer">The Beer</a></li>
-            <li><a class="topmenu" href="#" data-scroll="celebrating">Celebrating Mastery</a></li>
-            <li><a class="topmenu" href="#" data-scroll="since1871">Since 1871</a></li>
+            <li><a href="#" class="topmenu" onclick="menuFunction()" data-scroll="thebeer">The Beer</a></li>
+            <li><a href="#" class="topmenu" onclick="menuFunction()" data-scroll="celebrating">Celebrating Mastery</a></li>
+            <li><a href="#" class="topmenu" onclick="menuFunction()" data-scroll="since1871">Since 1871</a></li>
           </ul>
       </nav>
-      <a href="javascript:void(0);" class="icon" onclick="menuFunction()"><i class="fa fa-bars"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="menuFunction()"><i id="close" class="fa fa-bars"></i></a>
     </div>
   </header>
 
@@ -117,17 +117,34 @@
  <!--<script src="js/scripts.js"></script>-->
  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
-    function menuFunction() {
-        var x = document.getElementById("toggleNav");
-        if (x.className === "top") {
-            x.className = "responsive";
-        } else {
-            x.className = "top";
-        }
+
+    //menu mobile/tablet
+    if (matchMedia) {
+      const mq = window.matchMedia("(min-width: 1000px)");
+      mq.addListener(WidthChange);
+      WidthChange(mq);
     }
 
+    function WidthChange(mq) {
+      if(mq.matches){
+        document.getElementById("toggleNav").className = "top";
+        document.getElementById("close").className = "fa fa-bars"
+      }    
+    }
 
-
+    function menuFunction() {
+        var x = document.getElementById("toggleNav");
+        var y = document.getElementById("close");
+        if (x.className === "top") {
+            x.className = "responsive";
+            y.className = "fa fa-times";
+        } else {
+            x.className = "top";
+            y.className = "fa fa-bars";
+        }
+    }
+ 
+    //smooth scroll and anchor links
     $('nav ul li a').on('click', function() {
         var scrollAnchor = $(this).attr('data-scroll'),
             scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 48;
