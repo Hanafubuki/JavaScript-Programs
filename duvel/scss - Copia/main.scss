@@ -63,29 +63,9 @@ nav.top {
 	}
 
 }	
-	.icon{
-		overflow: hidden;
-		float: right;
-    	right: 0;
-    	top: 10;
-    	position: absolute;
-    	font-size:36px;
-		display:inline-block;
-		padding:8px 16px;
-		color: #000;
-	}
-
-	.responsive{
-		height:1000px;
-		width:100%;
-		padding-top:50px;
-		position:relative;
-		z-index:0;
-		overflow:auto;
-		background-color:#000;
-		font-size:36px;
-		animation:animatetop 0.4s
-	}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+	.icon {
+    overflow: hidden;
+}
 
 /*---------- Sections ----------*/
 @mixin sectioncontainer($w){
@@ -143,6 +123,27 @@ section#celebrating{
     		text-transform: uppercase;
     		padding-top: 30px;
     		padding-bottom: 30px;
+    		cursor: pointer;
+
+    		overflow: hidden; //effect: make overlay box
+    		position: relative; //effect: make overlay box
+
+    		.boxoverlay{ //effect: make overlay box
+    			z-index: 1;
+				-webkit-transition: all 300ms ease-out;
+				-moz-transition: all 300ms ease-out;
+				-o-transition: all 300ms ease-out;
+				-ms-transition: all 300ms ease-out;
+				transition: all 300ms ease-out;
+				opacity: 0;
+				background-color: #000;
+				height: 100%;
+				width: 100%;
+				position: absolute;
+    			left: 0;
+    			top: 0;
+    		}
+
     		h2{
     			font-size: 42px;
     			color: #000;
@@ -150,6 +151,13 @@ section#celebrating{
     			span{
     				color: $red;
     			}
+    		}
+
+    		h2,img{ //effect: make img bigger
+    			-webkit-transition: all .5s;
+			    -moz-transition: all .5s;
+			    -o-transition: all .5s;
+			    transition: all .5s;
     		}
 
     		.more{
@@ -179,11 +187,19 @@ section#celebrating{
 
 				}
 				.arrow {
-					    transform: rotate(-45deg);
-					    -webkit-transform: rotate(-45deg);
-					}
+					transform: rotate(-45deg);
+					-webkit-transform: rotate(-45deg);
+				}
     		}
     	}
+
+    	.boxbeer:hover .boxoverlay { opacity: 0.5; } //effect: make overlay box
+
+    	.boxbeer:hover img, .boxbeer:hover h2, 
+		.boxbeer:focus img, .boxbeer:focus h2 { // effect: make img bigger
+		  transform: scale(1.2);
+		}
+
     	.right{
     			margin-top: 22%;
     			margin-left: 10%;

@@ -123,6 +123,8 @@ section#celebrating{
     		text-transform: uppercase;
     		padding-top: 30px;
     		padding-bottom: 30px;
+    		cursor: pointer;
+
     		h2{
     			font-size: 42px;
     			color: #000;
@@ -130,6 +132,13 @@ section#celebrating{
     			span{
     				color: $red;
     			}
+    		}
+
+    		h2,img{ //effect: make img bigger
+    			-webkit-transition: all .5s;
+			    -moz-transition: all .5s;
+			    -o-transition: all .5s;
+			    transition: all .5s;
     		}
 
     		.more{
@@ -159,11 +168,17 @@ section#celebrating{
 
 				}
 				.arrow {
-					    transform: rotate(-45deg);
-					    -webkit-transform: rotate(-45deg);
-					}
+					transform: rotate(-45deg);
+					-webkit-transform: rotate(-45deg);
+				}
     		}
     	}
+
+    	.boxbeer:hover img, .boxbeer:hover h2, 
+		.boxbeer:focus img, .boxbeer:focus h2 { // effect: make img bigger
+		  transform: scale(1.2);
+		}
+
     	.right{
     			margin-top: 22%;
     			margin-left: 10%;
