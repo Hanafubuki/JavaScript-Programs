@@ -226,7 +226,9 @@ section#since1871{
 
 section#instagram{
 	text-align: center;
-	padding-top: 50px;
+	.imginst{
+		height: 150px;
+	}
 	img{
 		width: 150px;
 	}

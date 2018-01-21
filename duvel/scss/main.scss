@@ -238,15 +238,31 @@ section#since1871{
 section#instagram{
 	padding-top: 100px;
 	padding-bottom: 80px;
-
 	img{
-		display: inline-block;
 		margin-top: 20px;
+		float: left;
 	}
-
 	img,h3{
 		cursor: pointer;
 	}
+
+	.imginst{ //effect overlay
+		height: 240px;
+		display: inline-block;
+		img {
+		  -webkit-transition: all 300ms ease-out;
+		  -moz-transition: all 300ms ease-out;
+		  -o-transition: all 300ms ease-out;
+		  -ms-transition: all 300ms ease-out;
+		  transition: all 300ms ease-out;
+		}
+		.instoverlay{  
+			  color: #000;
+			  z-index: 100;
+			  opacity: 0;
+			}
+	}
+	.imginst:hover img { opacity: 0.5; }//effect overlay
 }
 
 footer{

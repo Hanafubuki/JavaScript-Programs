@@ -174,10 +174,25 @@ section#instagram {
   padding-top: 100px;
   padding-bottom: 80px; }
   section#instagram img {
-    display: inline-block;
-    margin-top: 20px; }
+    margin-top: 20px;
+    float: left; }
   section#instagram img, section#instagram h3 {
     cursor: pointer; }
+  section#instagram .imginst {
+    height: 240px;
+    display: inline-block; }
+    section#instagram .imginst img {
+      -webkit-transition: all 300ms ease-out;
+      -moz-transition: all 300ms ease-out;
+      -o-transition: all 300ms ease-out;
+      -ms-transition: all 300ms ease-out;
+      transition: all 300ms ease-out; }
+    section#instagram .imginst .instoverlay {
+      color: #000;
+      z-index: 100;
+      opacity: 0; }
+  section#instagram .imginst:hover img {
+    opacity: 0.5; }
 
 footer {
   padding-top: 30px;
