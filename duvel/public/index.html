@@ -6,7 +6,7 @@
     <title>Duvel</title>
     <meta name="description" content="Duvel, the best beer you will everr taste!">
     <meta name="author" content="Michele Weber">
-     <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
 
     <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
@@ -127,9 +127,15 @@
     </footer>
   </div>
 
- <!--<script src="js/scripts.js"></script>-->
  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
+    //service worker
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('/sw.js')
+               .then(function() { console.log("Service Worker Registered"); });
+    }
+
 
     //menu mobile/tablet
     if (matchMedia) {
