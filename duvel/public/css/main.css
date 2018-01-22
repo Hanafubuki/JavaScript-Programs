@@ -13,7 +13,6 @@ body {
 
 body, html {
   height: 100%;
-  /* Put background-img full screen */
   font-family: 'Teko', sans-serif;
   font-size: 22px;
   color: #333; }
@@ -51,6 +50,41 @@ nav.top {
 
 .icon {
   overflow: hidden; }
+
+/*---- Instagram icon ------*/
+* {
+  box-sizing: border-box; }
+
+.insticon {
+  /* first square */
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 25%;
+  background: transparent;
+  border: 2px solid #ee1b2e;
+  margin-top: 12px; }
+  .insticon:before, .insticon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin: auto; }
+  .insticon:before {
+    /* large circle */
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: calc(100% / 5);
+    left: calc(100% / 5);
+    border: 2px solid #ee1b2e; }
+  .insticon:after {
+    /* small circle */
+    width: 2px;
+    height: 2px;
+    background: #ee1b2e;
+    border-radius: 100%;
+    right: 12%;
+    top: 12%; }
 
 /*---------- Sections ----------*/
 .divider {
@@ -195,6 +229,8 @@ section#instagram {
     float: left; }
   section#instagram img, section#instagram h3 {
     cursor: pointer; }
+  section#instagram span {
+    padding-left: 35px; }
   section#instagram .imginst {
     height: 240px;
     display: inline-block; }

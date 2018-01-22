@@ -2,8 +2,18 @@ $white: #fff;
 $red: #ee1b2e;
 $grey: #333;
 $lightgrey:#E1E1E1;
+
+//Arrow
 $arrow-size: 14px;
 $arrow-border: 3px;
+
+//Instagram icon
+$size: 50px;
+$blur: .15*$size;
+$inner: .7*$size;
+$bw: .05*$size;
+$diam: .3125*$size;
+$off: .65*$diam;
 
 *, 
 *:before, 
@@ -73,6 +83,48 @@ nav.top {
 	.icon {
     overflow: hidden;
 }
+
+
+/*---- Instagram icon ------*/
+* {
+  box-sizing: border-box; }
+
+.insticon {
+/* first square */
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 25%;
+	background: transparent;
+	border: 2px solid $red; 
+	margin-top: 12px;
+
+	&:before, 
+	&:after{
+		content: "";
+  		display: block;
+  		position: absolute;
+  		margin: auto; 
+  	}
+
+	&:before {
+  /* large circle */
+  		width: 10px;
+  		height: 10px;
+  		border-radius: 100%;
+  		top: calc(100% / 5);
+  		left: calc(100% / 5);
+  		border: 2px solid $red; }
+
+	&:after {
+  	/* small circle */
+ 		width: 2px;
+  		height: 2px;
+  		background: $red;
+  		border-radius: 100%;
+  		right: 12%;
+  		top: 12%; }
+  }
 
 /*---------- Sections ----------*/
 @mixin sectioncontainer($w){
@@ -258,6 +310,9 @@ section#instagram{
 	}
 	img,h3{
 		cursor: pointer;
+	}
+	span{
+		padding-left: 35px;
 	}
 
 	.imginst{ //effect overlay
