@@ -2,7 +2,6 @@ $white: #fff;
 $red: #ee1b2e;
 $grey: #333;
 $lightgrey:#E1E1E1;
-
 $arrow-size: 14px;
 $arrow-border: 3px;
 
@@ -21,7 +20,7 @@ body {
 }
 
 body, html {
-	height: 100%; /* Put background-img full screen */
+	height: 100%;
 	font-family: 'Teko', sans-serif;
 	font-size: 22px;
 	color: $grey;
