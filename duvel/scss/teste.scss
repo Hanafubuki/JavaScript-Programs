@@ -1,0 +1,22 @@
+%box {
+    border: 1px solid;
+    padding: 1em;
+    margin: 1em;
+}
+
+@mixin module($bgcolor, $border) {
+  background-color: $bgcolor;
+  border-color: $border;
+  @extend %box;
+}
+
+.thisbox {
+  @include module(Tomato, #888);
+}
+.thatbox {
+  @include module(slategray, Tomato);
+  color: white;
+}
+.anotherbox {
+  @include module(beige, green);
+} 

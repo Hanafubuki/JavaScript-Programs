@@ -1,0 +1,23 @@
+body{
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+}
+
+.thisbox, .thatbox, .anotherbox {
+  border: 1px solid;
+  padding: 1em;
+  margin: 1em; }
+
+.thisbox {
+  background-color: Tomato;
+  border-color: #888; }
+
+.thatbox {
+  background-color: slategray;
+  border-color: Tomato;
+  color: white; }
+
+.anotherbox {
+  background-color: beige;
+  border-color: green; }
+
+/*# sourceMappingURL=teste.css.map */
